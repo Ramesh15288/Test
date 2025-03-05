@@ -10,9 +10,11 @@ ${SEARCH_BUTTON}    name=btnK
 
 *** Test Cases ***
 Google Search Test
+    [Tags]    some random test in google
     [Documentation]    Open Google and search for Robot Framework
     Open Browser    ${URL}    ${BROWSER}
     Pause Execution
     Input Text    ${SEARCH_BOX}    Robot Framework
     Press Keys    ${SEARCH_BOX}    ENTER
     Close Browser
+    
